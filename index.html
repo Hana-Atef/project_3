@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title></title>
+</head>
+<body>
+  
+  <!-- ///////////////////// Header ///////////////////////// -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid nav-con">
+        <!-- Brand -->
+        <a class="pr-3"><img class="rounded-circle" src="images/logo.jpg" alt="Logo" style="width:45px;"></a>
+        <a class="navbar-brand bor logo" href="#">Dior</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link bor" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bor" href="#">Dresses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bor" href="#">Bags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bor" href="#">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bor" href="#">Perfumes</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item  dropdown">
+              <a class="nav-link bor dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Categories
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">WOMEN'S FASHION</a>
+                <a class="dropdown-item" href="#">MEN'S FASHION</a>
+                <a class="dropdown-item" href="#">KIDS & BABY</a>
+                <a class="dropdown-item" href="#">HAUTE COUTURE</a>
+                <hr>
+                <a class="dropdown-item" href="#">GIFTS</a>
+                <a class="dropdown-item" href="#">MAISON</a>
+              </div>
+            </li>
+          </ul>
+          <form class=" form-inline search" action="">
+            <input class="form-control mt-1 mr-sm-2" type="text" placeholder="Search">
+            <a href="#"><button class="btn mt-1" type="submit">Search</button></a>
+
+            <!-- Button to Open the Modal -->
+            <a href="#"><button type="button" class="btn ml-2 mt-1" data-toggle="modal" data-target="#myModal">Login 
+            </button></a>
+          </form>         
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade " id="myModal" active >
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                  </div>
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="switch1" checked>
+                    <label class="custom-control-label" for="switch1">Remember Me</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary mt-2">Login</button>
+                </form>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+  </header>
+
+  <!-- ///////////////////// Main ///////////////////////// -->
+
+  <main >
+    <div id="demo" class="carousel slide  mt-4" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="contain">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/772636.webp" alt="Perfume">
+            <div class="carousel-caption">
+              <h3 class="text-dark">Dior's Perfume</h3>
+              <a href="#"><button class="btn btn-bg-transparent border-dark text-dark px-3">Buy Now</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img  src="images/98521.jpg" alt="Make-Up">
+            <div class="carousel-caption">
+              <h3 class="text-dark">Dior's Make-Up</h3>
+              <a href="#"><button class="btn btn-bg-transparent border-dark text-dark px-3">Buy Now</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/1666251916_M0446CBAA_M45M_E01_GHC.webp" alt="Bag">
+            <div class="carousel-caption">
+              <h3 class="text-dark">Dior's Bag</h3>
+              <a href="#"><button class="btn btn-bg-transparent border-dark text-dark px-3">Buy Now</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/1589528703_KCK211OBE_S56B_E02_ZH.webp" alt="Shoes">
+            <div class="carousel-caption">
+              <h3 class="text-dark">Dior's Shoes</h3>
+              <a href="#"><button class="btn btn-bg-transparent border-dark text-dark px-3">Buy Now</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <i class="fas fa-angle-left arrow"></i>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <i class="fas fa-angle-right arrow"></i>
+      </a>
+    </div>
+  </main>
+
+  <!-- ///////////////////// Section ///////////////////////// -->
+
+  <sction>
+    <div class="container-fluid pt-5 ">
+      <div class="container-fluid">
+        <h2 class="welcome">Welcome</h2>
+        <p><small>Above all, be the heroine of your life, not the victim</small></p>
+        <a href="#"><button class=" Discover btn class px-4 py-2 my-2 ">DISCOVER</button></a>
+      </div>
+      <hr>
+      <div class=" Brands-title text-center my-5">
+        <h2>CATEGORIES .. </h2>
+        <div class="line"></div>
+      </div>
+      <div id="accordion" class="container-fluid ">
+        <div class="card con-arrow ">
+          <button class="card-header card-link border-0 text-left cat-but " type="button" data-toggle="collapse" href="#collapseOne">
+            LA COLLECTION PRIVÉE CHRISTIAN DIOR
+          <i class="fas fa-chevron-down down-arr"></i>
+          </button>
+
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              BATH & BODY:
+                The liquid hand and body soaps - Bar soaps - Body cremes - The hand and body lotions
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="card con-arrow">
+          <button class="card-header card-link border-0 text-left cat-but" type="button" data-toggle="collapse" href="#collapseTwo">
+            WOMEN'S FASHION
+            <i class="fas fa-chevron-down down-arr"></i>
+          </button>
+          
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              ACCESSORIES : Belts - Silk scarves & Mitzah - Shawls & Stoles - Scarves & Knitwear - Sunglasses - Hats & Gloves
+            </div>
+          </div>
+        </div> 
+      
+        <div class="card con-arrow">
+          <button class="card-header card-link border-0 cat-but" type="button" data-toggle="collapse" href="#collapseThree">
+            MAKE-UP
+          <i class="fas fa-chevron-down down-arr "></i>
+          </button>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              NAILS : All nail products - Nail Lacquers - Manicure
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </sction>
+
+  <!-- ///////////////////// Section //////////////////////// -->
+
+  <section>
+    <div class="container-fluid make-up-section mt-5">
+      <div class="topic-title text-center">
+        <h2>EXPLORE ALL DIOR BEAUTY PRODUCTS .. </h2>
+        <p class="mak-text"><small>Delight in the wonder of the season with Dior's exclusive holiday gift selection.</small></p>
+      </div>
+      <div class="container make-up-card ">
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/ceaefd8edc191bb7685c4d9d08114716.jpg" alt="make-up">
+          <a href="https://www.dior.com/en_int/beauty/make-up/complexion/powders" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/65.jpg" alt="make-up">
+          <a href="https://www.dior.com/en_int/beauty/make-up/eyes/mascaras" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/e137e4e69a838b2c32d3e5034c415d68.jpg" alt="make-up">
+          <a href="https://www.dior.com/en_int/beauty/make-up/complexion/concealers" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+  
+  <!-- ///////////////////// Footer ///////////////////////// -->
+
+  <section>
+    <div class="container-fluid make-up-section mt-5">
+      <div class="topic-title text-center">
+        <h2>PERFUMES .. </h2>
+        <p class="mak-text"><small>Inside every La Collection Privée Christian Dior signature is a scented journey waiting to unfold.</small></p>
+      </div>
+      <div class="container make-up-card ">
+
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/03316405e2d1f066088e9c6e43a9826f.jpg" alt="make-up">
+          <a href="https://www.pinterest.com/pin/9148005511966780/" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/WhatsApp Image 2022-11-28 at 12.00.34.jpg" alt="make-up">
+          <a href="https://www.dior.com/en_int/beauty/make-up/eyes/mascaras" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/WhatsApp Image 2022-11-28 at 12.00.jpg" alt="make-up">
+          <a href="https://www.dior.com/en_int/beauty/make-up/complexion/concealers" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+        </div>
+        <hr> 
+      </div>
+  </section>
+  
+  <!--///////////////////////////// sECTION /////////////////////////////////  -->
+
+  <section>
+    <div class="container-fluid make-up-section mt-5 mb-3">
+      <div class="topic-title text-center">
+        <h2>WOMEN'S BAGS BY CATEGORY .. </h2>
+        <p class="mak-text"><small>Delight in the wonder of the season with Dior's exclusive holiday gift selection.</small></p>
+      </div>
+      <div class="container make-up-card ">
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/d319e92d57c7c761a0ca9e66120a01e8.jpg" alt="make-up">
+          <a href="https://www.pinterest.com/pin/2392606042221227/" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/dio.jpg" alt="make-up">
+          <a href="https://www.pinterest.com/pin/515943701071710705/" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent">
+          <img class="img-fluid rounded mt-4 make-up-img" src="images/c2640aef053722408ec5b95a4e03e9fc.jpg" alt="make-up">
+          <a href="https://www.pinterest.com/pin/576460821067426415/" class="mb-1 see_link" target="_blank">DISCOVER</a>
+          <div class="card-body">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Let's See More"><button class="btn make-up-but mb-2">Add to Cart</button></a>
+          </div>
+        </div>
+        </div> 
+      </div>
+  </section>
+
+  <!-- ///////////////////////////////// Section ///////////////////////////// -->
+
+  <section>
+    <div class=" back-section w-80">
+    </div>
+  </section>
+  <hr>
+
+  <!-- /////////////////////////////////// Section //////////////////////////// -->
+
+  <section>
+    <div class=" Brands-title text-center my-5">
+      <h2>OUR FRIENDS .. </h2>
+      <div class="line"></div>
+    </div>
+    <div class="container-fluid">
+      <div class=" row-justify-content-center brands">
+        <div class="card brand ml-4 mb-4 " style="width: 255px;">
+          <div class="card-body">
+            <img class="card-img-top mb-5  rounded" src="images/830879.png" alt="hermes">
+            <hr class="hr-line">
+            <div class="">
+              <h4 class="card-title brand-title ">HERMES</h4>
+              <p class="card-text my-2">Some example text.</p>
+              <a href="https://www.hermes.com/us/en/" class="btn brands-btn" target="_blank">Visit our Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card brand ml-4 mb-4 " style="width: 255px;">
+          <div class="card-body">
+            <img class="card-img-top mb-5 " src="images/61336a2c82b156000425b39f.png" alt="chanel">
+            <hr class="hr-line">
+            <div class="">
+              <h4 class="card-title brand-title">CHANEL</h4>
+              <p class="card-text my-2">Some example text.</p>
+              <a href="https://www.chanel.com/us/" class="btn brands-btn" target="_blank">Visit our Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card brand ml-4 mb-4" style="width: 255px;">
+          <div class="card-body">
+            <img class="card-img-top mb-5" src="images/download.png" alt="findi">
+            <hr class="hr-line">
+            <div class="">
+              <h4 class="card-title brand-title">FINDI</h4>
+              <p class="card-text my-2">Some example text.</p>
+              <a href="https://www.fendi.com/ii-en/" class="btn brands-btn" target="_blank">Visit our Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card brand ml-4 mb-4 " style="width: 255px;">
+          <div class="card-body">
+            <img class="card-img-top mb-5" src="images/1960s_Gucci_Logo.svg.png" alt="Gucci">
+            <hr class="hr-line">
+            <div class="">
+              <h4 class="card-title brand-title">GUCCI</h4>
+              <p class="card-text my-2">Some example text.</p>
+              <a href="https://www.gucci.com/" class="btn brands-btn" target="_blank">Visit our Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card brand ml-4 mb-4 " style="width: 255px;">
+          <div class="card-body">
+            <img class="card-img-top mb-5" src="images/Prada-Logo.png" alt="prada">
+            <hr class="hr-line">
+            <div class="">
+              <h4 class="card-title brand-title">PRADA</h4>
+              <p class="card-text my-2">Some example text.</p>
+              <a href="https://www.prada.com/ww/en.html" class="btn brands-btn" target="_blank" >Visit our Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card brand ml-4 mb-4 " style="width: 255px;">
+          <div class="card-body">
+            <img class="card-img-top mb-5" src="images/Louis_Vuitton_LV_logo.png" alt="Louis_Vuitton">
+            <hr class="hr-line">
+            <div class="">
+              <h4 class="card-title brand-title">LOUIS VUITTON</h4>
+              <p class="card-text my-2">Some example text.</p>
+              <a href="https://eu.louisvuitton.com/eng-e1/homepage" class="btn brands-btn" target="_blank">Visit our Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card brand ml-4 mb-4 " style="width: 255px;">
+          <div class="card-body">
+            <img class="card-img-top mb-5" src="images/Versace-Logo-PNG-HD-Isolated.png" alt="Versace">
+            <hr class="hr-line">
+            <div class="">
+              <h4 class="card-title brand-title">VERSACE</h4>
+              <p class="card-text my-2">Some example text.</p>
+              <a href="https://www.versace.com/on/demandware.store/Sites-US-Site/en_US/Default-Start?&wt_mc=WW.SEM.Google.Text&utm_campaignname=01_Top_Brand_Exact_INT_WW&utm_adgroup=Exact&utm_term=versace&s_kwcid=AL!6089!3!479723549679!e!!g!!versace&gclid=Cj0KCQiAsoycBhC6ARIsAPPbeLvKoXQErulmslIvoXXcZ-IIf3jrTVuQAwvdQS5S3tu_0-chVHKe5D0aAheFEALw_wcB&gclsrc=aw.ds" class="btn brands-btn" target="_blank">Visit our Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ////////////////////////////////// Section ////////////////////////////// -->
+
+  <section>
+    <div class=" back-section two w-80"></div>
+  </section>
+  <hr>
+
+  <!-- ////////////////////////////////// Section ////////////////////////////// -->
+
+  <section>
+    <div class="Brands-title text-center my-5">
+      <h2>Thanks For .. </h2>
+      <div class="line"></div>
+    </div>
+    <div class="container">
+      <div class="thank-section row-justify-content-center">
+        <div class="card thank mb-4">
+          <div class="card-body ">
+            <img class="card-img-top mb-2 rounded thank-img" src="images/ower.png" alt="Christian Dior">
+            <div class="card-body">
+              <p class="card-title thank-title text-center ">Christian Dior</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card thank mb-4 ">
+          <div class="card-body ">
+            <img class="card-img-top mb-2 rounded thank-img" src="images/237973-bernard-arnault.jpg" alt="Bernard Arnault">
+            <div class="card-body">
+              <p class="card-title thank-title text-center">Bernard Arnault</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card thank mb-4">
+          <div class="card-body">
+            <img class="card-img-top mb-2 rounded thank-img" src="images/DxbnLeqWwAENt5G.jpg" alt="Marcel Boussac">
+            <div class="card-body">
+              <p class="card-title thank-title text-center">Marcel Boussac</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <!-- ///////////////////////////////// Section //////////////////////////////// -->
+
+  <section>
+    <div class="container text-center mb-5">
+      <div class=" Brands-title text-center my-5">
+        <h2>Join Us </h2>
+        <div class="line"></div>
+      </div>
+
+      <div class=" container">
+        <div class="social-section row-justify-content-center">
+          <div class="social mt-4">
+            <span class="d-block mt-3">Follow Us..</span>
+            <div class="social-icon">
+              <i class="fab fa-facebook-f face"></i>
+            </div>
+            <a class="social-link" href="https://www.facebook.com/Dior/" target="_blank">Click here</a>
+          </div>
+  
+          <div class="social mt-4">
+            <span class="d-block mt-3">Follow Us..</span>
+            <div class="social-icon">
+              <i class="fab fa-instagram insta"></i>
+            </div>
+            <a class="social-link" href="https://www.instagram.com/dior/" target="_blank">Click here</a>
+          </div>
+  
+          <div class="social mt-4">
+            <span class="d-block mt-3">Follow Us..</span>
+            <div class="social-icon">
+              <i class="fab fa-pinterest-p pin"></i>
+            </div>
+            <a class="social-link" href="https://www.pinterest.com/dior/" target="_blank">Click here</a>
+          </div>
+  
+          <div class="social mt-4">
+            <span class="d-block mt-3">Follow Us..</span>
+            <div class="social-icon">
+              <i class="fab fa-twitter twi"></i>
+            </div>
+            <a class="social-link" href="https://twitter.com/Dior?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Click here</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    
+  </section>
+
+<!-- //////////////////////////////// Section///////////////////////////////////// -->
+  
+  <section>
+    <div class="see">
+      <div class="l-sec row-justify-content-center">
+        <div class="last-section">
+          <div class="sec-line my-3"></div>
+          <h3 class="info">Contact Us</h3>
+          <div class="sec-line my-3"></div>
+          <p>Tel: 012-345-678</p>
+          <p>Fax: xxx-xxx-xxx</p>
+          <p>Tel: 012-345-678</p>
+        </div>
+
+        <div class="last-section">
+          <div class="sec-line my-3"></div>
+          <h3 class="info">More Information</h3>
+          <div class="sec-line my-3"></div>
+          <a class="social-link" href="https://www.dior.com/en_int"><p>Official Website</p></a>
+          <a class="social-link" href="https://www.galeriedior.com/en/history"><p>Our History</p></a>
+          <a class="social-link" href="https://www.dior.com/fashion/stores/en_int/france/paris/127-avenue-des-champs-elys%C3%A9es?utm_source=Yext&utm_medium=GMB"><p>A DIOR Paris Champs-Elysées</p></a> 
+        </div>
+  
+        <div class="last-section ">
+          <div class="sec-line my-3"></div>
+          <h3 class="info">Our Branches</h3>
+          <div class="sec-line my-3"></div>
+          <p>931 Rush Street Chicago, IL 60611</p>
+          <p>6288 Hollywood Blvd, Hollywood Hollywood</p>
+          <p>3131 South Las Vegas Boulevard Las Vegas</p>
+        </div>   
+      </div>
+      <div class="container-fluid">
+        <div class="sec-line my-4"></div>
+        <p class="text-center owner">COPYRIGHTS &copy; 2022. ALL RIGHTS RESERVED BY <span>HANA</span></p>
+        <div class="sec-line last mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- /////////////////////////////////////Footer ///////////////////// -->
+
+  <footer>
+    <div class="container" style="text-align:center;">
+      <div class=" Brands-title text-center mt-5 mb-4">
+        <h2>Our Location..</h2>
+        <div class="line"></div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13812.629813200745!2d31.219431!3d30.0610209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdadef1140658a5!2z2K_ZitmI2LE!5e0!3m2!1sar!2seg!4v1669737562477!5m2!1sar!2seg" width="80%" height="450" style="border:2px solid #540804; margin: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+
+  <!-- ///////////////////////////////////////////////////////////////// -->
+
+  <!-- <video autoplay muted loop class="myVideo w-100 h-75">
+    <source src="video/video.mp4" type="video/mp4">
+  </video> -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
